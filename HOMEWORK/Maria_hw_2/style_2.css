@@ -1,0 +1,22 @@
+.links {
+	font-size: 35px;
+}
+
+:visited {
+	color: blue;
+}
+
+.yandex,
+.yandex.new.win,
+.new_win {
+	color: #f70;
+}
+
+.google {
+	color: #666;
+}
+
+.new_win {
+	text-decoration: none;
+}
+

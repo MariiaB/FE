@@ -1,0 +1,21 @@
+table {
+	text-align: center;
+	width: 100%
+}
+
+td {
+	border-bottom: 1px solid #AAA9A5;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.col_color {
+	background: #f2f2de;
+}
+
+.col_1,
+.row_color td:nth-child(even) {
+	background: #ddebf7;
+}
+

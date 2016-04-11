@@ -1,0 +1,77 @@
+h1 {
+	text-align: right;
+	color: orange;
+}
+
+h2 {
+	text-align: left;
+}
+
+p::first-letter {
+	font-size: 200%;
+	color: red;
+}
+.marked {
+	background: green;
+	color: white;
+	font-style: italic; 
+}
+
+.garden {
+	color: orange;
+}
+
+.stock {
+	color: blue;
+}
+
+.garden_fruits,
+.garden_vegetables,
+.stock_fruits,
+.stock_vegetables {
+	font-weight: bold; 
+}
+
+.sublist {
+	font-weight: normal;
+}
+
+.fruits_1 {
+	color: #AAA9A5;
+}
+
+.vegetables {
+	color: red;
+}
+
+.fruits_2 {
+	color: green;
+}
+
+table {
+	border: 1px solid #AAA9A5;
+	text-align: center;
+	width: 50%
+}
+
+th {
+	border: 1px solid #757471;
+	font-weight: bold;
+	}
+
+td {
+	border: 1px solid #757471;
+}
+
+.name {
+	text-align: left;
+	color: orange;
+}
+
+.availability {
+	text-align: center;
+	background: green;
+	color: white;
+}
+
+

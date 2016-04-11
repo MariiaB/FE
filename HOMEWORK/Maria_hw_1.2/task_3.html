@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Task 3</title>
+	</head>
+	<body>
+		<form action="">
+			<label for="name">Name</label>
+			<br/>
+				<input type="text" name="name" id="name" placeholder="Your name">
+			<br/><br/>
+
+
+			<label for="email">Email</label>
+			<br/>
+				<input type="email" name="email" id="email" placeholder="Your email">
+			<br/><br/>
+
+
+			<div>Sex</div>
+				<input type="radio" name="sex" value="male" id="male"><label for="male">Male</label>
+				<input type="radio" name="sex" value="female" id="female"><label for="female">Female</label>
+			<br/><br/>
+
+			<div>Current status</div>
+				<input type="checkbox" name="status" value="student" id="student"><label for="student">Student</label>
+			<br/>
+				<input type="checkbox" name="status" value="employed" id="employed"><label for="employed">Employed</label>
+			<br/>
+				<input type="checkbox" name="status" value="unemployed" id="unemployed"><label for="unemployed">Unemployed</label>
+			<br/><br/>
+
+			<div>Month and Year of birth</div>
+				<label for="month"></label>
+					<select>
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+					</select>
+				<label for="year"></label><input type="number" min="1900" max="2016" name="year" step="1" value="1989" id="year"></input>
+			<br/><br/>
+
+			
+			<div>Skills and Technologies</div>
+				<select multiple style="height: 175px"> 
+                	<optgroup label="Tech skills">
+                    	<option>HTML</option>
+                    	<option>CSS</option>
+                    	<option>JavaScript</option>
+                    	<option>git</option>
+                  	</optgroup>
+                  	<optgroup label="Soft skills">
+                    	<option>Time management</option>
+                    	<option>Proactivity</option>
+                    	<option>Teamwork</option>
+                    	<option>Leadership</option>
+                  	</optgroup>
+                </select>
+        	<br/><br/>
+
+
+			<div>Photo</div>
+			<label for="upload_photo"></label>
+				<input type="file" name="upload_photo" value="chpose_file" id="upload_photo"></input> 
+			<br/><br/>
+
+
+			<div>Comments</div>
+			<label for="comments"></label>
+				<textarea for="comments" name="comments" id="comments" placeholder="Add your comments here"></textarea>
+			<br/><br/>
+
+
+			<label for="save_button"></label><input type="submit" name="save_button" value="Save" id="save"></input>
+			<br/><br/>
+		</form>
+	</body>
+</html>
