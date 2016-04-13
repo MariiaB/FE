@@ -1,48 +1,62 @@
-.buttons input[type="checkbox"] {
+body {
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+.color-switchers form {
+	display: inline-block;
+	margin: 10px;
+}
+
+.color-switchers input[type="checkbox"] {
 	display: none;
 }
 
-label[for="red-button"]{
+.color-switchers label {
+	text-decoration: underline;
+	margin-right: 30px;
+}
+
+.color-switchers label[for="red-switcher"] {
 	color: red;
-	text-decoration: underline;
+	
 }
 
-label[for="green-button"]{
-	color: green;
-	text-decoration: underline;
+.color-switchers label[for="green-switcher"] {
+	color: #31A935;
 }
 
-label[for="blue-button"]{
+.color-switchers label[for="blue-switcher"] {
 	color: blue;
-	text-decoration: underline;
 }
 
-.buttons input[type="checkbox"]:checked{
-	opacity: 0.5
+.color-switchers input[type="checkbox"]:checked+label {
+	opacity: 0.3
 }
 
-.buttons span {
+.color-switchers span {
 	color: white;
-	display: inline-block;
-	border-radius: 5px;
-	padding: 5px;
-	text-decoration: underline;
+	border-radius: 7px;
+	font-weight: bold;
+	padding: 5px 4px 3px;
+	margin: 3px;
+}
+
+.color-switchers span.red-button {
+	background-color: red;
+}
+
+.color-switchers span.green-button {
+	background-color: green;
+}
+
+.color-switchers span.blue-button {
+	background-color: blue;
+}
+
+.color-switchers input[name="red-switcher"]:checked ~ .red-button,
+.color-switchers input[name="green-switcher"]:checked ~ .green-button, 
+.color-switchers input[name="blue-switcher"]:checked ~ .blue-button {
 	display: none;
 }
 
-
-input [name="red"]:checked ~.red {
-	display: inline-block;
-	background: blue;
-	color: white;
-}
-input [name="green"]:checked ~.green {
-	display: inline-block;
-	background: blue;
-	color: white;
-}
-input [name="blue"]:checked ~.blue {
-	display: inline-block;
-	background: blue;
-	color: white;
-}
+ 
