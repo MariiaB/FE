@@ -1,0 +1,55 @@
+body {
+	font-family: 'Economica', sans-serif;
+    font-weight: bold;
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    background-color: #a64dff;
+    display: inline-block;
+}
+
+.nav-bar ul {
+    width: 900px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar ul li.title {
+    float: left;
+    position: relative;
+    left: 25%;
+    list-style-type: none;
+}
+
+.nav-bar ul li.title-left {
+    float: left;
+    position: relative;
+    left: 60%;
+    list-style-type: none;
+}
+
+.title a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-bar ul li a:hover {
+    color: #a0a0a2;
+    background: #eeeeee;
+}
+
+.title-left a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+
+}

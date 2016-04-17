@@ -1,0 +1,36 @@
+body {
+	font-family: 'Economica', sans-serif;
+}
+
+.nav-bar {
+	width: 100%;
+    margin: 20px auto 0 auto;
+    background-color: #a64dff;
+    display: inline-block;
+}
+
+.nav-bar ul {
+	width: 900px;
+	padding: 0;
+	margin: 0 auto;
+}
+	
+.nav-bar ul li {
+	display: inline-block;
+  	padding: 0;
+  	margin: 0;
+}
+
+.title a {
+	display: inline-block;
+    text-decoration: none;
+    color: #fff;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+s}
+
+.nav-bar ul li a:hover {
+	color: #a0a0a2;
+	background: #eeeeee;
+}

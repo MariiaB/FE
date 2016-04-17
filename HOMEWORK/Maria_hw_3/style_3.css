@@ -1,0 +1,46 @@
+body {
+	font-family: 'Economica', sans-serif;
+}
+
+.pagination-wrapper {
+	background: #fafafa;
+	display: inline-block;
+    margin: 15px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 10px;
+}
+
+ul.pagination li {
+    display: inline-block;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    color: #a23cd0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+ul.pagination li a.button {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 4px;
+}  
+
+ul.pagination li a.hover:hover {
+    color: white;
+    background: #a23cd0;
+}
+
+.prev {
+    margin-left: 15px; 
+}
+
