@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.box-wrapper {
+	height: 300px;
+	background: #efefef;
+	perspective: 500px;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin-left: -75px;
+	margin-top: -75px;
+	background: red;
+	transform-style: preserve-3d;
+}
+
+.side {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: blue;
+	transform-style: preserve-3d;
+	transform: rotateY(90deg);
+	backface-visibility: hidden;
+}
+
+.side1 {
+	transform: rotate3d(1, 0, 0, 90deg) translateZ(75px); 
+}
+
+.side2 {
+	transform: translateZ(75px); 
+}
+
+.side3 {
+	transform: rotate3d(1, 0, 0, 90deg) translateZ(-75px); 
+}
+
+.side4 {
+	transform: rotate3d(1, 0, 0, -90deg) translateZ(-75px); 
+}
+
+.side5 {
+	transform: rotate3d(0, 1, 0, 90deg) translateZ(75px); 
+}
+
+.side6 {
+	transform: rotate3d(0, 1, 0, -90deg) translateZ(75px); 
+}
+
+.btn {
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	background: green; 
+	box-shadow: 0 3px 2px 0 #000000;
+	margin: 0 auto;
+	transition: background 0.2s ease;
+	line-height: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: yellow;
+}
+
+.btn:active {
+	box-shadow: 0 1px 2px 0 #000000;
+}
+
+.square {
+	box-shadow: 0 0 2px #000;
+	width: 80px;
+	height: 80px;
+	background: aqua;
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	margin: 50px auto;
+
+}
+
+.square:hover {
+	animation-play-state: paused;
+}
+
+@keyframes rotate {
+	from {
+		transform: translateX(0) rotate(0); 
+	}
+	to {
+		transform: translateX(200px) rotate(360deg);
+	}
+}
+
+@media screen and (max-width: 600px) {
+body {
+	background: blue;
+}	
+}

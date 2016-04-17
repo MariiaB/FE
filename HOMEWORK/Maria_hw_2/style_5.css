@@ -3,7 +3,6 @@ body {
 }
 
 .color-switchers form {
-	display: inline-block;
 	margin: 10px;
 }
 
@@ -39,6 +38,7 @@ body {
 	font-weight: bold;
 	padding: 5px 4px 3px;
 	margin: 3px;
+	display: inline-block;
 }
 
 .color-switchers span.red-button {
