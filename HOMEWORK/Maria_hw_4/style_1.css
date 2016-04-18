@@ -1,86 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Economica', sans-serif;
 }
 
-/*Nav bar start*/
-.nav-bar {
-    width: 100%;
-    margin: 20px 0 0 0;
+div.nav-bar {
     background-color: #1aa4ff;
-    display: block;
-    height: 70px;
+    margin: 25px 0;
+   
 }
 
 .nav-bar ul {
-    list-style: none;
-    text-align: center;
-    width: 900px;
-    padding: 0;
-    margin: 0;
-    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+    /*width: 900px;*/
+    height: 40px;
+    margin: 0px auto;
+
 }
 
 .nav-bar ul li {
+    width: 120px;
+    height: 40px;
+    margin: 0px 4px;
     float: left;
-    line-height: 50px;
-    left: 50%;
- }
+}
 
-.title a {
+.menu a {
     display: block;
+    width: 120px;
+    height: 40px;
+    padding: 0px 20px;
+    line-height: 40px;
     text-decoration: none;
+    text-align: center;
     color: #fff;
-    padding: 10px 20px;
-    margin: 0;
-    font-size: 24px;
     font-weight: bold;
-    transition: .3s background-color;
     cursor: pointer;
 }
-/*Nav bar finish*/
 
-.nav-bar ul li a:hover {
+.nav-bar ul li.menu a:hover {
     color: #a0a0a2;
     background: #eeeeee;
 }
 
-/*Submenu*/
-.showme {
-    width: 100%;
-    margin: 0;
-    background-color: #eeeeee;
-    display: block;
-}
-
-ul.showme {
-    /*width: 900px;
-    padding: 0;
-    margin: 0;*/
-    display: inline;
-}
-
-ul.showme li {
-    float: left;
-    /*position: relative;*/
-    left: 5%;
+ul.submenu-wrapper {
     list-style-type: none;
+    overflow: hidden;
+    /*width: 900px;*/
+    height: 40px;
+    margin: 0px auto;
+    border: 2px solid red;
 }
 
-.subtitle a {
-    font-family: Arial, sans-serif;
+ul.submenu-wrapper li {
+    width: 120px;
+    height: 40px;
+    margin: 0px 4px;
+    float: left;
+}
+
+.submenu a {
     display: inline-block;
+    width: 120px;
+    height: 40px;
+    padding: 0px 20px;
+    line-height: 40px;
     text-decoration: none;
+    text-align: center;
     color: #898788;
-    padding: 10px 20px;
-    margin: 0;
-    font-size: 16px;
     cursor: pointer;
-}
-
-ul.showme {
-    display: none;
-}
-    
-.hoverme:hover ~ .showme {
-    display: inline;
 }
